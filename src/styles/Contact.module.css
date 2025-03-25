@@ -1,0 +1,10 @@
+.contact {
+    padding: 4rem;
+  }
+  
+  .contact a {
+    display: block;
+    margin-top: 1rem;
+    color: #0073e6;
+    text-decoration: none;
+  }

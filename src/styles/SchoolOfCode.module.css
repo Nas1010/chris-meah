@@ -1,0 +1,17 @@
+.school {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    padding: 4rem;
+  }
+  
+  .video iframe {
+    width: 200%;
+    height: 500px;
+  }
+  
+  .description {
+    max-width: 600px;
+  }
+  

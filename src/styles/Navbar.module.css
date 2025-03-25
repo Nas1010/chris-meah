@@ -10,6 +10,7 @@
     z-index: 1000;
   }
   
+
   .navbar ul {
     list-style: none;
     display: flex;
@@ -19,7 +20,13 @@
   .navbar a {
     text-decoration: none;
     color: black;
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     cursor: pointer;
+  }
+
+  .logo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
   }
   

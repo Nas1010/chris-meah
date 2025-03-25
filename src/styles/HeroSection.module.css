@@ -1,0 +1,18 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    padding: 4rem;
+    margin-top: 60px
+  }
+  
+  .image img {
+    width: 400px;
+    height: 400px;
+    border-radius: 500%;
+  }
+  
+  .about {
+    max-width: 600px;
+  }
