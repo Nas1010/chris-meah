@@ -1,9 +1,13 @@
-import HeroSection from './components/HeroSection'; // Correct import for default export
+import HeroSection from './components/HeroSection'; 
+import Navbar from './components/Navbar';
+import SchoolOfCode from './components/SchoolOfCode';
 
 function App() {
     return (
-      <>
-        <HeroSection/>
+        <>
+            <Navbar/>
+            <HeroSection />
+            <SchoolOfCode/>
       </>
     );
   }

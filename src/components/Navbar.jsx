@@ -4,7 +4,7 @@ import styles from '../styles/Navbar.module.css';
 const Navbar = () => {
   return (
     <nav className={styles.navbar}>
-      <h1 className={styles.logo}>Your Name</h1>
+      <h1 className={styles.logo}>Chris Meah</h1>
       <ul>
         <li><Link to="home" smooth={true} duration={500}>Home</Link></li>
         <li><Link to="schoolOfCode" smooth={true} duration={500}>School of Code</Link></li>
