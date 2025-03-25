@@ -1,0 +1,25 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 95%;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
