@@ -2,7 +2,7 @@ import styles from '../styles/HeroSection.module.css';
 
 const HeroSection = () => {
   return (
-    <section className={styles.hero}>
+    <section id='home' className={styles.hero}>
       <div className={styles.image}>
         <img src="Chris-Meah.jpg" alt="Chris Meah" />
       </div>

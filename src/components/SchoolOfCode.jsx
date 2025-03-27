@@ -2,7 +2,7 @@ import styles from '../styles/SchoolOfCode.module.css';
 
 const SchoolOfCode = () => {
   return (
-    <section className={styles.school}>
+    <section id='schoolOfCode' className={styles.school}>
       <div className={styles.video}>
         <iframe 
           width="560" 

@@ -5,7 +5,7 @@ import styles from '../styles/Testimonials.module.css';
 
 const Testimonials = () => {
   return (
-    <section className={styles.testimonialContainer}>
+    <section id="testimonials" className={styles.testimonialContainer}>
       <div className={styles.title}>
         <h2>Testimonial</h2>
         <p>What members are saying.</p>
@@ -27,8 +27,8 @@ const Testimonials = () => {
           }}
         >
           {reviews.map((review) => (
-            <SplideSlide key={review.id} className={styles.slide}>
-              <img className={styles.reviewImg} src={review.image} alt="" />
+            <SplideSlide key={review.id} className={styles.splideSlide}>
+              <img className={styles.reviewImg} src={review.image} alt="Reviewer" />
               <div className={styles.content}>
                 <p className={styles.text}>{review.text}</p>
                 <div className={styles.info}>
