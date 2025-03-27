@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700');
 
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 img {
   max-width: 100%;
@@ -130,8 +130,8 @@ body {
 }
 
 .splide__pagination__page {
-  height: 10px;
-  width: 10px;
+  height: 20px;
+  width: 20px;
   opacity: 1;
 }
 
