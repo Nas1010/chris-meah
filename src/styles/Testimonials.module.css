@@ -90,11 +90,14 @@ body {
   color: #484646;
   margin-bottom: 1rem;
   font-size: 1.1rem;
+ 
 }
 
 .sliderContainer .content .rating {
   display: inline-block;
   line-height: 1;
+  text-align: center;
+  
 }
 
 .sliderContainer .content .star {

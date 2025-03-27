@@ -1,74 +1,133 @@
-/* src/styles/Contact.module.css */
-.contact {
-    padding: 4rem 2rem;
-    background-color: white;  /* Plain white background */
-    font-family: 'Poppins', sans-serif;
-    color: black;  /* Black font color */
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: none; /* Removed shadow */
+.contactSection {
+  padding: 5rem 1.5rem;
+  background-color: #f9fafb;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: #111827;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+@media (min-width: 768px) {
+  .contactGrid {
+    grid-template-columns: 1fr 1fr;
   }
-  
-  .contact h2 {
-    font-weight: 600;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: black; /* Black color for heading */
-  }
-  
-  .contactContent {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 2rem;
-  }
-  
-  .description {
-    flex: 1;
-    margin-right: 2rem;
-    max-width: 45%;
-    text-align: left;
-  }
-  
-  .description p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    line-height: 1.6;
-  }
-  
-  .contactLinks {
-    flex: 1;
-    max-width: 45%;
-    text-align: left;
-  }
-  
-  .linkedinIcon {
-    width: 60px;
-    height: 60px;
-    margin: 20px;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .linkedinIcon:hover {
-    transform: scale(1.2);
-  }
-  
-  .emailLink {
-    display: inline-block;
-    margin-top: 1.5rem;
-    text-decoration: none;
-    color: black; /* Black color for email link */
-    font-size: 1.2rem;
-    font-weight: 500;
-    padding: 0.5rem 1rem;
-    border: 2px solid black; /* Black border */
-    border-radius: 4px;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .emailLink:hover {
-    background-color: black;
-    color: white;
-  }
-  
+}
+
+.contactInfo,
+.services {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.subheading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #111827;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 0.75rem;
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.75rem;
+  color: #4b5563;
+}
+
+.link {
+  color: #4b5563;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: #1f2937;
+  text-decoration: underline;
+}
+
+.socialLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  color: #4b5563;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.socialLink:hover {
+  color: #1f2937;
+}
+
+.socialIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.75rem;
+}
+
+.serviceItem {
+  margin-bottom: 2rem;
+}
+
+.serviceTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #111827;
+}
+
+.serviceDescription {
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.externalLink {
+  display: inline-flex;
+  align-items: center;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.externalLink:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+.externalLinkIcon {
+  width: 1rem;
+  height: 1rem;
+  margin-left: 0.375rem;
+}
+
