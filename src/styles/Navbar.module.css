@@ -1,57 +1,192 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 1000;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #050510 0%, #080820 50%, #050510 100%);
+  border-bottom: 1px solid rgba(129, 177, 194, 0.3);
+  box-shadow: 0 4px 20px rgba(20, 18, 24, 0.2);
+  overflow: hidden;
+  opacity: 50;
+}
 
-   .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;  
-    width: 100%;  
-    background: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-    padding: 1rem 2rem;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    border-bottom: 1px solid #ccc;  
-    box-sizing: border-box;  
-    background-color:rgb(255, 255, 255)
-  }
-  
-  
-  .navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-    
-  }
-  
-  .navbar a {
-    text-decoration: none;
-    color: rgb(11, 10, 10);
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    cursor: pointer;
-    white-space: nowrap;  
+/* Circuit pattern overlay */
+.navbar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(circle at 20% 50%, rgba(23, 55, 71, 0.1) 0%, transparent 10%),
+    radial-gradient(circle at 80% 30%, rgba(37, 122, 164, 0.1) 0%, transparent 10%),
+    linear-gradient(
+      90deg,
+      transparent 0%,
+      transparent 5%,
+      rgba(37, 122, 164, 0.05) 5%,
+      rgba(37, 122, 164, 0.05) 6%,
+      transparent 6%,
+      transparent 95%,
+      rgba(37, 122, 164, 0.05) 95%,
+      rgba(37, 122, 164, 0.05) 96%,
+      transparent 96%,
+      transparent 100%
+    ),
+    linear-gradient(
+      0deg,
+      transparent 0%,
+      transparent 5%,
+      rgba(37, 122, 164, 0.05) 5%,
+      rgba(37, 122, 164, 0.05) 6%,
+      transparent 6%,
+      transparent 95%,
+      rgba(37, 122, 164, 0.05) 95%,
+      rgba(37, 122, 164, 0.05) 96%,
+      transparent 96%,
+      transparent 100%
+    );
+  background-size: 200px 200px, 200px 200px, 100px 100px, 100px 100px;
+  opacity: 0.3;
+  z-index: -1;
+}
 
-  }
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  position: relative;
+}
 
-  @keyframes slideIn {
-    0% {
-      transform: translateX(-100%); 
-    }
-    100% {
-      transform: translateX(0);
-    }
+.navbar a {
+  text-decoration: none;
+  color: rgba(165, 220, 255, 0.8);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  position: relative;
+  padding: 0.5rem 0;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #57caf4;
+  text-shadow: 0 0 10px rgba(87, 202, 244, 0.5), 0 0 20px rgba(87, 202, 244, 0.3);
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #57caf4, transparent);
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
   }
-  
-  .logo {
-    font-family: 'Poppins', sans-serif;
-    /* font-family: 'Grumpy', serif; */
-    font-weight: 600;
-    margin-left: 250px;
-    font-size: 2rem;
-    animation: slideIn 1s ease-out; 
-    
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
-  
-  
+}
+
+.logo {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-left: 250px;
+  font-size: 2rem;
+  animation: slideIn 1s ease-out;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(87, 202, 244, 0.7), 0 0 20px rgba(87, 202, 244, 0.4);
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+}
+
+.logo::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -15px;
+  width: 30px;
+  height: 2px;
+  background: #57caf4;
+  box-shadow: 0 0 10px #57caf4;
+}
+
+.logo::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  right: -15px;
+  width: 30px;
+  height: 2px;
+  background: #57caf4;
+  box-shadow: 0 0 10px #57caf4;
+}
+
+/* Glowing dots for decoration */
+.navDecoration {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.glowDot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #57caf4;
+  box-shadow: 0 0 10px #57caf4, 0 0 20px #57caf4;
+  animation: pulseDot 3s infinite alternate;
+  transform: translateY(-1px);
+}
+
+@keyframes pulseDot {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.glowDot:nth-child(odd) {
+  animation-delay: 0.5s;
+}
+
+.glowDot:nth-child(3n) {
+  animation-delay: 1s;
+}
+
+.glowDot:nth-child(3n + 1) {
+  animation-delay: 1.5s;
+}
+
+
   
