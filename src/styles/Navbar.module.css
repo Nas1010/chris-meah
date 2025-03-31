@@ -13,6 +13,7 @@
     z-index: 1000;
     border-bottom: 1px solid #ccc;  
     box-sizing: border-box;  
+    background-color:rgb(255, 255, 255)
   }
   
   
@@ -20,15 +21,17 @@
     list-style: none;
     display: flex;
     gap: 1rem;
+    
   }
   
   .navbar a {
     text-decoration: none;
-    color: black;
+    color: rgb(11, 10, 10);
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     cursor: pointer;
     white-space: nowrap;  
+
   }
 
   @keyframes slideIn {
@@ -42,12 +45,13 @@
   
   .logo {
     font-family: 'Poppins', sans-serif;
+    /* font-family: 'Grumpy', serif; */
     font-weight: 600;
+    margin-left: 250px;
+    font-size: 2rem;
     animation: slideIn 1s ease-out; 
+    
   }
   
-  .logo {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-  }
+  
   

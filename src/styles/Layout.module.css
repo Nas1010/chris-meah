@@ -1,0 +1,22 @@
+.layout {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  
+  .background {
+    position: fixed; /* Stays behind the content */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0; /* Keeps video behind everything */
+    pointer-events: none; /* Prevents interference */
+  }
+  
+  .main {
+    position: relative;
+    z-index: 2; /* Ensures text and content appear above the background */
+  }
+  

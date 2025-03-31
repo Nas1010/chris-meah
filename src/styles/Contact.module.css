@@ -1,6 +1,6 @@
 .contactSection {
   padding: 5rem 1.5rem;
-  background-color: #f9fafb;
+ 
 }
 
 .container {
@@ -13,7 +13,7 @@
   font-weight: 700;
   margin-bottom: 3rem;
   text-align: center;
-  color: #111827;
+  color: rgb(181, 174, 174);
 }
 
 .contactGrid {

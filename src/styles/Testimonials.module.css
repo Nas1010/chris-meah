@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700');
 
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
-
 img {
   max-width: 100%;
   display: block;
@@ -13,7 +7,7 @@ img {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f6f6f6;
+  color: rgb(181, 174, 174);
 }
 
 /* Testimonial container */
@@ -24,11 +18,14 @@ body {
   flex-direction: column;
   justify-content: center;
   height: 100vh;
+
 }
+
 
 .title {
   text-align: center;
   margin-bottom: 2rem;
+
 }
 
 .title h2 {
@@ -36,6 +33,7 @@ body {
   font-weight: bold;
   font-size: 1.7rem;
   line-height: 1.1;
+  color: rgb(181, 174, 174);
 }
 
 /* Slider container */
@@ -48,6 +46,7 @@ body {
 .sliderContainer .quote {
   position: absolute;
   z-index: -1;
+ 
 }
 
 .sliderContainer .topQuote {
