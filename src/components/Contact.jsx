@@ -88,7 +88,7 @@ function Contact() {
             <div className={styles.serviceItem}>
               <h4 className={styles.serviceTitle}>Speaking Engagements</h4>
               <p className={styles.serviceDescription}>
-                I'm available for speaking engagements on topics related to tech education, coding bootcamps, and career
+                I'm available for speaking engagements on topics related to AI, coding bootcamps, and career
                 transitions into the tech industry. Please reach out via email to discuss opportunities.
               </p>
             </div>

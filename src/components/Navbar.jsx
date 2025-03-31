@@ -1,4 +1,3 @@
-import { Link } from 'react-scroll';
 import styles from '../styles/Navbar.module.css';
 
 const Navbar = () => {

@@ -24,6 +24,22 @@ const SchoolOfCode = () => {
         <p>I set out to solve this problem by creating the School of Code, which has now had 18 cohorts and has transformed lives. We’ve helped people from all walks of life—teachers, truck drivers, stay-at-home moms, and more—transition into the tech industry and build fulfilling careers. The School of Code provides a route for anyone eager to learn and contribute to the ever-evolving world of technology.
         </p>
       </div>
+
+      {/* <div className={styles.statsContainer}>
+          <div className={styles.statItem}>
+            <span className={styles.statNumber}>18+</span>
+            <span className={styles.statLabel}>Cohorts</span>
+          </div>
+          <div className={styles.statItem}>
+            <span className={styles.statNumber}>100%</span>
+            <span className={styles.statLabel}>Free</span>
+          </div>
+          <div className={styles.statItem}>
+            <span className={styles.statNumber}>16</span>
+            <span className={styles.statLabel}>Weeks</span>
+          </div>
+        </div> */}
+      
     </section>
   );
 };
