@@ -14,32 +14,22 @@ const SchoolOfCode = () => {
           allowFullScreen
         ></iframe>
       </div>
+      <div className={styles.schoolGrid}>
       <div className={styles.description}>
-        <h2>School of Code</h2>
-        <p>
-        I started the School of Code in 2015 while studying for my PhD. With my background in Artificial Intelligence and Computer Science, I’ve always believed that technology presents a golden opportunity to create a more equal and fair world for everyone. After completing my studies in AI, I saw the looming impact of automation, which could disrupt many people's livelihoods, but there was no clear path to help them transition into the tech space.
-        </p>
-        <p>There’s always been a lack of diverse stories in tech, with many people discovering it at an early age. But what about those who didn’t start coding at 5 years old? How do individuals with decades of experience in other fields suddenly transform into technical talent?
-        </p>
-        <p>I set out to solve this problem by creating the School of Code, which has now had 18 cohorts and has transformed lives. We’ve helped people from all walks of life—teachers, truck drivers, stay-at-home moms, and more—transition into the tech industry and build fulfilling careers. The School of Code provides a route for anyone eager to learn and contribute to the ever-evolving world of technology.
-        </p>
-      </div>
+  <h2>School of Code</h2>
+  <p>
+    I founded the School of Code in 2015 during my PhD, combining my background in AI and Computer Science. I saw automation’s potential impact on livelihoods and recognised a need to help people transition into tech.
+  </p>
+  <p>
+    Tech often lacks diverse stories, with many starting young. But how do people with no coding background pivot into tech?
+  </p>
+  <p>
+    The School of Code, now with 18 cohorts, has transformed lives, helping people from diverse backgrounds—teachers, truck drivers, stay-at-home moms—transition into tech and build fulfilling careers.
+  </p>
+        </div>
+        </div>
 
-      {/* <div className={styles.statsContainer}>
-          <div className={styles.statItem}>
-            <span className={styles.statNumber}>18+</span>
-            <span className={styles.statLabel}>Cohorts</span>
-          </div>
-          <div className={styles.statItem}>
-            <span className={styles.statNumber}>100%</span>
-            <span className={styles.statLabel}>Free</span>
-          </div>
-          <div className={styles.statItem}>
-            <span className={styles.statNumber}>16</span>
-            <span className={styles.statLabel}>Weeks</span>
-          </div>
-        </div> */}
-      
+
     </section>
   );
 };
