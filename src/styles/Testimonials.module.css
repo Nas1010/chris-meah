@@ -54,7 +54,7 @@ body {
   position: absolute;
   top: -1rem;
   left: -1rem;
-  color: rgb(181, 174, 174)
+
 }
 
 .sliderContainer .bottomQuote {
@@ -62,7 +62,6 @@ body {
   bottom: -3rem;
   right: -0.5rem;
   transform: rotate(180deg);
-  color: rgb(181, 174, 174)
 }
 
 .sliderContainer .reviewImg {

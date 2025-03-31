@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <section id='home' className={styles.hero}>
       <div className={styles.image}>
-        <img src="Chris-Meah.jpg" alt="Chris Meah" />
+        <img src="digitalBrain.jpg" alt="brain image" />  
       </div>
       <div className={styles.about}>
         <h2>About Me</h2>
