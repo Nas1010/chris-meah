@@ -6,17 +6,18 @@
   }
   
   .background {
-    position: fixed; /* Stays behind the content */
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: 0; /* Keeps video behind everything */
-    pointer-events: none; /* Prevents interference */
+    z-index: 0; 
+    pointer-events: none; 
+    object-fit: cover;
   }
   
   .main {
     position: relative;
-    z-index: 2; /* Ensures text and content appear above the background */
+    z-index: 2; 
   }
   

@@ -19,7 +19,7 @@ export const reviews = [
       id: 3,
       image:
         '/matthew.jpg',
-      name: 'From Teacher to Full-time Developer: Matthew England',
+      name: 'Bootcamper: Matthew England',
       text: 'The boot camp was much harder than anticipated.The sheer amount of content to learn was at times overwhelming. However, Chris was there every step of the way to guide us through.',
       rating: 5,
     },
