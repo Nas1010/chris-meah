@@ -41,6 +41,7 @@ body {
   position: relative;
   user-select: none;
   padding-inline: 1rem;
+  overflow: visible;
 }
 
 .sliderContainer .quote {
@@ -53,6 +54,7 @@ body {
   position: absolute;
   top: -1rem;
   left: -1rem;
+  color: rgb(181, 174, 174)
 }
 
 .sliderContainer .bottomQuote {
@@ -60,6 +62,7 @@ body {
   bottom: -3rem;
   right: -0.5rem;
   transform: rotate(180deg);
+  color: rgb(181, 174, 174)
 }
 
 .sliderContainer .reviewImg {
@@ -79,14 +82,13 @@ body {
 .splide__slide {
   display: flex;
   align-items: center;
-  background-color: #fff;
   padding: 3rem 1.875rem;
   border-radius: 1rem;
   gap: 1rem;
 }
 
 .sliderContainer .content .text {
-  color: #484646;
+  color: rgb(181, 174, 174);
   margin-bottom: 1rem;
   font-size: 1.1rem;
  
@@ -107,28 +109,28 @@ body {
 .sliderContainer .content .user {
   font-weight: 600;
 }
-
+/* 
 .splide__pagination__page.is-active {
   background-color: #ff6f59;
-}
+} */
 
 .splide__arrow {
-  position: absolute;
+  position: relative;
   background-color: transparent;
   border: none;
   font-size: 2rem;
-  color: #505050;
+  color: #e7dddd;
   font-weight: 300;
 }
 
 .splide__arrow--prev {
   top: 50%;
-  left: -3.5rem;
+  left: -15rem !important;
 }
 
 .splide__arrow--next {
   top: 50%;
-  right: -3.5rem;
+  right: -15rem !important;
 }
 
 .splide__pagination__page {

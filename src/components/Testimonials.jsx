@@ -2,12 +2,22 @@ import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/splide.min.css';
 import { reviews } from './reviewsData';
 import styles from '../styles/Testimonials.module.css';
+import { useEffect } from 'react';
 
 const Testimonials = () => {
+
+  useEffect(() => {
+    const prevArrow = document.querySelector(".splide__arrow--prev");
+    const nextArrow = document.querySelector(".splide__arrow--next");
+    
+    if (prevArrow) prevArrow.style.left = "-12rem";
+    if (nextArrow) nextArrow.style.right = "-12rem";
+  }, []);
+
   return (
     <section id="testimonials" className={styles.testimonialContainer}>
       <div className={styles.title}>
-        <h2>Testimonial</h2>
+        <h2>Testimonials</h2>
         <p>What members are saying.</p>
       </div>
 
