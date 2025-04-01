@@ -9,7 +9,8 @@
 
 .video iframe {
   width: 200%;
-  height: 500px;
+  height: 480px;
+  border-radius: 20px; 
 }
 
 .description  {
