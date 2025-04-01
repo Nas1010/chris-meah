@@ -14,7 +14,6 @@ const SchoolOfCode = () => {
           allowFullScreen
         ></iframe>
       </div>
-      <div className={styles.schoolGrid}>
       <div className={styles.description}>
   <h2>School of Code</h2>
   <p>
@@ -27,9 +26,6 @@ const SchoolOfCode = () => {
     The School of Code, now with 18 cohorts, has transformed lives, helping people from diverse backgrounds—teachers, truck drivers, stay-at-home moms—transition into tech and build fulfilling careers.
   </p>
         </div>
-        </div>
-
-
     </section>
   );
 };

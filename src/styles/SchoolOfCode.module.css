@@ -5,6 +5,8 @@
   font-family: 'Poppins', sans-serif;
   padding: 4rem;
   color: #111827;
+
+  
 }
 
 .video iframe {
@@ -21,9 +23,12 @@
   
 }
 
-.schoolGrid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 3rem;
-
+.description h2 {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #070707; 
 }
+
+
