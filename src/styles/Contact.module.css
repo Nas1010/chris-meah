@@ -34,7 +34,6 @@
   background-color: rgba(165, 220, 255, 0.8);
   border-radius: 0.5rem;
   max-width: 90%;
-  height: 400px;
   padding: 2rem;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
@@ -129,3 +128,33 @@
   margin-left: 0.375rem;
 }
 
+@media (max-width: 767px) {
+  .contactSection {
+    padding: 3rem 1rem;
+  }
+  
+  .heading {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+  
+  .contactInfo,
+  .services {
+    max-width: 100%;
+    height: auto; /* Remove fixed height to allow content to flow */
+    padding: 1.5rem;
+  }
+  
+  .infoItem {
+    margin-bottom: 0.75rem;
+  }
+  
+  .subheading {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .serviceItem {
+    margin-bottom: 1.5rem;
+  }
+}

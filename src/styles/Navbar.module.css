@@ -16,7 +16,6 @@
   opacity: 50;
 }
 
-
 .navbar::before {
   content: "";
   position: absolute;
@@ -189,4 +188,23 @@
 }
 
 
-  
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 1rem;
+    justify-content: space-between;
+  }
+
+  .navbar ul {
+    display: none; 
+  }
+
+  .navbar .logo {
+    margin-left: 0;  
+    font-size: 2rem; 
+  }
+
+  .navbar .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+}
