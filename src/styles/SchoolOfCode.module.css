@@ -5,7 +5,7 @@
   font-family: 'Poppins', sans-serif;
   padding: 4rem;
   color: #111827;
-
+  flex-wrap: wrap;
   
 }
 
@@ -32,3 +32,19 @@
 }
 
 
+@media screen and (max-width: 768px) {
+  .school {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .video {
+    margin-left: 0;
+    margin-top: 0;
+  }
+  
+  .description {
+    max-width: 100%;
+    margin-top: 2rem;
+  }
+}
