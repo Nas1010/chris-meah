@@ -69,3 +69,6 @@ npm install
 
 npm start
 
+##  Deployed using vercel:
+
+https://chris-meah-one.vercel.app/
