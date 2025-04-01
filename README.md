@@ -6,10 +6,44 @@ This project is a React portfolio for Chris Meah, designed with a futuristic aes
 
 The portfolio features multiple sections that form a comprehensive overview of Chris's professional journey:
 
-- **Home:** An engaging landing page that sets the tone and welcomes visitors.
-- **School of Code:** A dedicated section highlighting Chris's involvement with the School of Code, sharing the story and impact of the initiative.
-- **Testimonials:** A collection of testimonials from peers, collaborators, and clients, demonstrating trust and the quality of work.
-- **Contact:** A section for visitors to get in touch through various channels.
+- **Home:** An engaging landing page that introduces Chris and his educational background and interest in AI.
+- **School of Code:** A dedicated section highlighting Chris's journey of creating the School of Code, sharing the story and impact of the initiative.
+- **Testimonials:** A collection of testimonials who have worked with or have been impacted by Chris' work.
+- **Contact:** A section for visitors to get in touch through various channels, as well as the services he provides.
+
+## Folder Structure
+
+chris-meah-portfolio/
+├── public/
+│   ├── index.html          
+│   ├── images/             
+│             
+├── src/
+│   ├── components/         
+│   │   ├── BackgroundVideo.jsx  
+│   │   ├── Contact.jsx    
+│   │   ├── Footer.jsx        
+│   │   ├── HeroSection.jsx   
+│   │   ├── Layout.jsx         
+│   │   ├── Navbar.jsx         
+│   │   ├── ReviewsData.js     
+│   │   ├── SchoolOfCode.jsx 
+│   │   └── Testimonials.jsx   
+│   ├── styles/               
+│   │   ├── Contact.module.css 
+│   │   ├── Footer.module.css  
+│   │   ├── HeroSection.module.css 
+│   │   ├── Layout.module.css  
+│   │   ├── Navbar.module.css   
+│   │   ├── Testimonials.module.css 
+│   │   └── SchoolOfCode.module.css
+│   ├── App.jsx       
+│   ├── index.js             
+├── package.json         
+├── package-lock.json       
+└── README.md               
+
+
 
 ## Technologies Used
 
@@ -24,5 +58,14 @@ The portfolio features multiple sections that form a comprehensive overview of C
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/chris-meah-portfolio.git
+   git clone git@github.com:Nas1010/chris-meah.git
    cd chris-meah-portfolio
+
+## To install the necessary dependencies, run:
+
+npm install
+
+## Run the development server:
+
+npm start
+
